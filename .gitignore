@@ -1,0 +1,12 @@
+﻿.env
+.env.*
+node_modules/
+dist/
+build/
+*.log
+.vscode/
+.idea/
+.azure/
+.swa/
+local.settings.json
+Thumbs.db
