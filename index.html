@@ -3,98 +3,292 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project MISE | Restaurant Intelligence for Independent Operators</title>
-  <meta name="description" content="Project MISE turns restaurant costs, menus, invoices, purchasing, and operations into clear, practical intelligence for independent operators.">
-  <meta name="robots" content="index,follow">
+  <title>Project MISE — Restaurant Operating Intelligence for Independent Operators</title>
+  <meta name="description" content="Project MISE turns restaurant invoices, recipes, menus, purchasing, labor, sales, and operating data into clear decisions that protect your margins. Enterprise-grade intelligence for independent operators.">
   <link rel="canonical" href="https://chefcory.com/">
-  <meta property="og:site_name" content="Project MISE">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Project MISE | Enterprise-grade restaurant intelligence for the independent operator">
-  <meta property="og:description" content="A clearer view of food cost, menu margins, purchasing, and the next operational move.">
+  <meta property="og:site_name" content="Project MISE">
+  <meta property="og:title" content="Project MISE — You built the restaurant. Keep more of what it earns.">
+  <meta property="og:description" content="Project MISE turns invoices, recipes, menus, purchasing, labor, sales, and operating data into clear decisions that protect your margins.">
   <meta property="og:url" content="https://chefcory.com/">
-  <meta name="theme-color" content="#17241d">
-  <style>
-    :root{--ink:#17241d;--ink-2:#203328;--forest:#315746;--sage:#b9c9b5;--cream:#f4f0e7;--paper:#fffdf8;--clay:#cc6331;--clay-light:#f5d2bd;--olive:#7b8f58;--muted:#657166;--line:#d8d5ca;--max:1180px;--shadow:0 20px 54px rgba(23,36,29,.13)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}.container{width:min(calc(100% - 48px),var(--max));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--clay);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:1px;background:currentColor}.display{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em;line-height:.98;text-wrap:balance}.section{padding:112px 0}.section-head{max-width:720px;margin-bottom:48px}.section-head h2{font-size:clamp(38px,5vw,64px);margin:17px 0 16px}.section-head p{max-width:610px;color:var(--muted);font-size:18px;margin:0}.skip{position:absolute;left:-999px;top:12px;background:var(--paper);padding:10px 15px;z-index:30}.skip:focus{left:12px}.nav{position:sticky;top:0;z-index:20;background:rgba(23,36,29,.96);border-bottom:1px solid rgba(255,255,255,.13);backdrop-filter:blur(16px)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;color:#fff;font-size:18px;font-weight:800;letter-spacing:-.04em}.brand-logo{width:40px;height:40px;object-fit:contain;border-radius:50%;background:#fff}.brand small{display:block;color:#b5c4b4;font-size:9px;letter-spacing:.13em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:25px;color:#cfdbcd;font-size:13px}.nav-links a:hover{color:#fff}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 17px;border-radius:3px;font-size:13px;font-weight:800;transition:transform .2s,background .2s}.nav-cta,.button.primary{background:var(--clay);color:#fff}.nav-cta:hover,.button.primary:hover{background:#de7744;transform:translateY(-1px)}.button.secondary{border:1px solid rgba(255,255,255,.4);color:#fff}.button.secondary:hover{border-color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:25px;min-width:44px;min-height:44px}
-    .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:90px 0 78px}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(185,201,181,.06) 1px,transparent 1px),linear-gradient(rgba(185,201,181,.06) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,#000 20%,transparent 86%)}.hero:after{content:"";position:absolute;width:560px;height:560px;right:-180px;top:-210px;border:1px solid rgba(204,99,49,.35);border-radius:50%;box-shadow:0 0 0 54px rgba(204,99,49,.05),0 0 0 108px rgba(204,99,49,.035)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:68px;align-items:center}.hero h1{max-width:710px;font-size:clamp(54px,7vw,91px);margin:19px 0 24px}.hero h1 em{color:#e9af8b;font-style:normal}.hero-copy{max-width:570px;color:#c8d4c7;font-size:19px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:31px 0 18px}.hero-note{color:#9daf9d;font-size:12px;margin:0}.briefing{background:#f7f2e8;color:var(--ink);border:1px solid rgba(255,255,255,.2);box-shadow:var(--shadow);padding:21px;transform:rotate(1.2deg)}.brief-top{display:flex;align-items:start;justify-content:space-between;border-bottom:1px solid #d3d0c5;padding-bottom:17px;margin-bottom:17px}.brief-top strong{font-size:14px}.brief-top small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.live{color:var(--forest);font-size:10px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.live:before{content:"●";font-size:8px;margin-right:5px;color:var(--olive)}.signal{display:grid;grid-template-columns:38px 1fr auto;gap:11px;align-items:center;padding:13px 0;border-bottom:1px solid #dedbd1}.signal:last-of-type{border-bottom:0}.signal-index{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#e7e4d8;color:var(--forest);font-size:11px;font-weight:800}.signal strong{display:block;font-size:13px}.signal small{display:block;color:var(--muted);font-size:11px}.signal-status{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.watch{color:var(--clay)}.steady{color:var(--forest)}.brief-bottom{margin-top:15px;padding:12px;background:#e7eee3;color:#42634e;font-size:11px;font-weight:700}
-    .promise{background:var(--paper);border-bottom:1px solid var(--line)}.promise-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:start}.promise-claim{font-size:clamp(28px,3vw,42px);margin:0}.promise-copy{font-size:20px;color:#415047;margin:0}.problem{background:#e7e3d8}.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}.problem h2{font-size:clamp(39px,5vw,65px);margin:16px 0 21px}.problem-copy{color:#58665d;font-size:18px}.kitchen-note{background:var(--ink);color:#fff;padding:33px;box-shadow:var(--shadow)}.kitchen-note h3{font:400 30px/1.08 Georgia,serif;margin:15px 0}.kitchen-note p{color:#bfcdbd;margin:0}.kitchen-list{list-style:none;padding:0;margin:25px 0 0;display:grid;gap:12px}.kitchen-list li{display:flex;gap:11px;border-top:1px solid rgba(255,255,255,.14);padding-top:12px;font-size:13px}.kitchen-list li:before{content:"/";color:#e9af8b;font-weight:bold}.feature-split{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}.feature-main{padding:42px;background:var(--forest);color:#fff}.feature-main h3{font:400 38px/1.08 Georgia,serif;margin:15px 0}.feature-main p{color:#d7e2d4;max-width:530px}.feature-list{display:grid;gap:12px;margin-top:26px}.feature-list div{border-top:1px solid rgba(255,255,255,.2);padding-top:11px;font-size:13px}.feature-side{display:grid;gap:20px}.feature-card{padding:28px;background:var(--paper);border:1px solid var(--line)}.feature-card h3{margin:0 0 9px;font-size:20px}.feature-card p{margin:0;color:var(--muted);font-size:14px}.feature-card strong{display:block;color:var(--clay);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:13px}.fab{background:var(--cream)}.fab-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.fab-card{padding:27px;background:var(--paper);min-height:250px}.fab-card span{color:var(--clay);font-size:11px;font-weight:800;letter-spacing:.1em}.fab-card h3{font:400 25px/1.1 Georgia,serif;margin:18px 0 13px}.fab-card p{color:var(--muted);font-size:14px;margin:0}.fab-card b{display:block;margin-top:18px;color:var(--forest);font-size:11px;text-transform:uppercase;letter-spacing:.07em}.usecases{background:var(--ink);color:#fff}.usecases .section-head p{color:#bacaba}.usecase-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.18)}.usecase{min-height:205px;padding:27px;border-right:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)}.usecase:nth-child(3n){border-right:0}.usecase:nth-last-child(-n+3){border-bottom:0}.usecase h3{margin:0 0 11px;font-size:18px}.usecase p{margin:0;color:#b9caba;font-size:13px}.usecase span{display:block;color:#e9af8b;font-size:10px;font-weight:800;letter-spacing:.1em;margin-bottom:19px}.workflow{background:#ece8de}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0}.step{position:relative;padding:0 27px 0 0}.step:not(:last-child):after{content:"→";position:absolute;right:8px;top:-8px;color:var(--clay);font-size:22px}.step-number{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--clay);border-radius:50%;color:var(--clay);font-size:12px;font-weight:800}.step h3{font-size:17px;margin:17px 0 9px}.step p{color:var(--muted);font-size:13px;margin:0}.mission{background:var(--paper)}.mission-grid{display:grid;grid-template-columns:1fr .85fr;gap:100px;align-items:center}.mission h2{font-size:clamp(42px,5vw,68px);margin:16px 0 23px}.mission p{font-size:18px;color:var(--muted)}.mission-quote{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:29px 0;color:var(--forest);font:400 29px/1.2 Georgia,serif}.mission-quote:before{content:"“";color:var(--clay);font-size:53px;line-height:0;vertical-align:-17px;margin-right:4px}.access{background:var(--forest);color:#fff}.access-grid{display:grid;grid-template-columns:1fr .8fr;gap:85px;align-items:start}.access h2{font-size:clamp(42px,5vw,68px);margin:16px 0 20px}.access p{color:#d1dfcf;font-size:17px;max-width:570px}.access-form{background:var(--paper);color:var(--ink);padding:29px}.access-form h3{font:400 25px Georgia,serif;margin:0 0 18px}.field{margin-bottom:13px}.field label{display:block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}.field input{width:100%;min-height:43px;padding:9px 11px;border:1px solid #d6d5cc;background:#fffdf8;color:var(--ink);border-radius:2px}.field input:focus{outline:2px solid var(--clay);outline-offset:1px}.access .form-note{font-size:11px;color:#526057;margin:14px 0 0}.form-status{display:none;margin-top:13px;padding:10px;background:#e6ede4;color:#365646;font-size:12px}.form-status.show{display:block}.footer{background:#101b15;color:#bdcbbc;padding:50px 0 24px}.footer-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:40px;padding-bottom:30px}.footer p{max-width:300px;font-size:13px}.footer h4{color:#fff;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin:2px 0 14px}.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:13px}.footer a:hover{color:#fff}.disclaimer{border-top:1px solid rgba(255,255,255,.14);padding-top:17px;font-size:11px;color:#829181}.version{display:block;margin-top:8px;color:#687868}.chef-visual{background:#111b15;padding:0}.chef-visual-grid{display:grid;grid-template-columns:1.2fr .8fr;min-height:470px}.chef-photo{width:100%;height:100%;min-height:470px;object-fit:cover;object-position:center}.chef-visual-copy{display:flex;flex-direction:column;justify-content:center;padding:55px;background:#22372b;color:#fff}.chef-visual-copy h2{font:400 clamp(37px,4vw,58px)/1.02 Georgia,serif;margin:16px 0}.chef-visual-copy p{color:#c5d4c4;font-size:17px;max-width:430px}.brand-banner{margin:0;background:#f6f1e8}.brand-banner img{display:block;width:100%;min-height:260px;max-height:440px;object-fit:cover;object-position:center}
-    @media(max-width:920px){.nav-links,.nav-cta{display:none}.menu{display:block}.nav-links.open{display:flex;position:absolute;left:0;right:0;top:76px;flex-direction:column;align-items:stretch;gap:0;padding:10px 24px 19px;background:var(--ink);border-top:1px solid rgba(255,255,255,.13)}.nav-links.open a{padding:12px 0}.hero-grid,.problem-grid,.feature-split,.mission-grid,.access-grid{grid-template-columns:1fr;gap:44px}.briefing{max-width:650px}.promise-grid{grid-template-columns:1fr;gap:19px}.fab-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr;gap:24px}.step{padding:0 0 0 57px}.step-number{position:absolute;left:0;top:0}.step:not(:last-child):after{content:"↓";left:13px;top:39px;right:auto}.workflow .section-head{margin-bottom:38px}.chef-visual-grid{grid-template-columns:1fr}.chef-photo{min-height:360px}.chef-visual-copy{padding:42px}}
-    @media(max-width:620px){.container{width:min(calc(100% - 32px),var(--max))}.section{padding:80px 0}.hero{padding:65px 0}.hero h1{font-size:51px}.hero-copy{font-size:17px}.briefing{padding:17px}.section-head p{font-size:16px}.problem-copy,.mission p{font-size:16px}.fab-grid,.usecase-grid{grid-template-columns:1fr}.usecase{min-height:auto;border-right:0}.usecase:nth-last-child(-n+3){border-bottom:1px solid rgba(255,255,255,.16)}.usecase:last-child{border-bottom:0}.footer-grid{grid-template-columns:1fr;gap:24px}.hero-actions .button{width:100%}.feature-main{padding:31px}.feature-card{padding:24px}}
-    @media(prefers-reduced-motion:reduce){*,html{scroll-behavior:auto!important;transition:none!important}}
-  </style>
+  <meta property="og:image" content="https://chefcory.com/assets/images/hero-kitchen-data.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1E1E1B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Project MISE home"><img class="brand-logo" src="assets/images/chef-cory-logo.png" alt="Chef Cory logo"><span>PROJECT MISE<small>Restaurant operating intelligence</small></span></a>
-      <nav class="nav-links" id="site-nav" aria-label="Main navigation"><a href="#intelligence">Intelligence</a><a href="#use-cases">Use Cases</a><a href="#workflow">How It Works</a><a href="#mission">Mission</a></nav>
-      <a class="nav-cta" href="#early-access">Request early access</a>
-      <button class="menu" id="menu" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false">☰</button>
+<body id="top">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Project MISE home">
+    <span class="brand-project">PROJECT</span>
+    <strong class="brand-mise">MISE</strong>
+    <span class="brand-by">BY KINETIC LABS</span>
+  </a>
+  <nav class="site-nav" id="site-nav" aria-label="Primary">
+    <a href="#why">Why MISE</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#team">The Team</a>
+    <a href="#how">How It Works</a>
+    <a href="#story">Our Story</a>
+  </nav>
+  <a class="btn btn-small nav-cta" href="#founding" data-analytics="cta_header_founding">Join the Founding Program</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+<!-- 1 · Mission-led hero -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Restaurant operating intelligence</p>
+    <h1>You built the restaurant.<br><em>Keep more of what it earns.</em></h1>
+    <p class="lead">Project MISE turns invoices, recipes, menus, purchasing, labor, sales, and operating data into clear decisions that protect your margins.</p>
+    <div class="actions">
+      <a class="btn" href="#how" data-analytics="cta_hero_how">See how Project MISE works</a>
+      <a class="btn btn-ghost" href="#founding" data-analytics="cta_hero_founding">Join the founding restaurant program</a>
     </div>
-  </header>
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Chef-informed restaurant intelligence</span>
-          <h1 class="display">The kitchen tells the story.<br><em>Project MISE shows the move.</em></h1>
-          <p class="hero-copy">Project MISE turns food cost, menus, invoices, purchasing, and operating data into practical intelligence for the independent restaurant operator.</p>
-          <div class="hero-actions"><a class="button primary" href="#early-access">Explore early access <span>↗</span></a><a class="button secondary" href="#intelligence">See the operating layer</a></div>
-          <p class="hero-note">Enterprise-grade restaurant intelligence for the independent operator.</p>
-        </div>
-        <aside class="briefing" aria-label="Illustrative Project MISE operating briefing">
-          <div class="brief-top"><div><strong>Project MISE / operating briefing</strong><small>Restaurant performance review</small></div><span class="live">Ready for review</span></div>
-          <div class="signal"><span class="signal-index">01</span><div><strong>Menu margin movement</strong><small>Understand what changed before the next service.</small></div><span class="signal-status watch">Review</span></div>
-          <div class="signal"><span class="signal-index">02</span><div><strong>Purchasing exposure</strong><small>See which vendor and ingredient changes need attention.</small></div><span class="signal-status watch">Watch</span></div>
-          <div class="signal"><span class="signal-index">03</span><div><strong>Plate-cost discipline</strong><small>Keep recipe assumptions and actual purchasing in view.</small></div><span class="signal-status steady">Stable</span></div>
-          <div class="signal"><span class="signal-index">04</span><div><strong>Operator priorities</strong><small>Turn operating records into a focused next-step list.</small></div><span class="signal-status steady">Prepared</span></div>
-          <div class="brief-bottom">Not another spreadsheet. A working view of what deserves attention.</div>
-        </aside>
-      </div>
-    </section>
+    <p class="signal-line">Food cost. Menu margin. Purchasing. Labor. Waste. Controls.<br><strong>Everything in its proper place.</strong></p>
+  </div>
+  <div class="hero-visual">
+    <img src="assets/images/hero-kitchen-data.jpg" alt="Handwritten kitchen notes and invoices on a marble counter in a professional restaurant kitchen" width="1600" height="1200" fetchpriority="high">
+    <aside class="brief-card" aria-label="Sample operating brief">
+      <p class="label">Today’s operating brief</p>
+      <ul>
+        <li><span>Food cost increased</span><b>+1.6 pts</b></li>
+        <li><span>Vendor items above 10%</span><b>3</b></li>
+        <li><span>Menu items below target</span><b>2</b></li>
+        <li><span>Prep overproduction</span><b>14%</b></li>
+      </ul>
+      <div class="opportunity"><span>Illustrative monthly opportunity</span><strong>$6,840</strong></div>
+      <p class="fineprint">Sample values for illustration only.</p>
+    </aside>
+  </div>
+</section>
 
-    <section class="promise">
-      <div class="container section" style="padding-block:42px"><div class="promise-grid"><p class="promise-claim display">Restaurant intelligence, built for the people running the shift.</p><p class="promise-copy">Large restaurant groups can afford controllers, procurement teams, executive chefs, analysts, and enterprise reporting systems. Independent operators deserve a clearer operating position too.</p></div></div>
-    </section>
+<!-- 2 · The independent-operator reality -->
+<section id="why" class="reality">
+  <div class="reality-copy">
+    <p class="eyebrow">The reality</p>
+    <h2>Large restaurant groups have teams.<br><em>Independent owners have Tuesday morning.</em></h2>
+    <p>Corporate groups employ controllers, procurement analysts, menu strategists, financial teams, and loss-prevention staff. Independent operators make the same decisions alone—between service, payroll, vendor calls, and the next emergency.</p>
+  </div>
+  <figure class="reality-photo">
+    <img src="assets/images/restaurant-owner.jpg" alt="An independent restaurant owner reviewing paperwork alone at a table before service" width="1600" height="1067" loading="lazy">
+  </figure>
+</section>
 
-    <section class="problem section" id="intelligence">
-      <div class="container problem-grid">
-        <div><span class="eyebrow">The operating reality</span><h2 class="display">The hardest decisions are made between the rush and the invoice.</h2><p class="problem-copy">A food-cost issue can start with a vendor price change, appear in a menu margin, and surface weeks later in a cash position. When information is scattered across invoices, recipes, POS exports, and spreadsheets, it is difficult to see the full picture in time to act.</p></div>
-        <aside class="kitchen-note"><span class="eyebrow">What Project MISE connects</span><h3>Costs, menu decisions, purchasing behavior, and the questions worth asking next.</h3><p>Project MISE is designed to make operating information more organized, understandable, and useful—without asking an owner to become a full-time analyst.</p><ul class="kitchen-list"><li>Food cost and plate cost</li><li>Menu profitability and contribution</li><li>Invoices, vendors, and price movement</li><li>Controller-style operating context</li></ul></aside>
-      </div>
-    </section>
+<!-- 3 · Input-to-intelligence system diagram -->
+<section class="diagram-section" aria-label="How restaurant data becomes answers">
+  <img src="assets/images/project-mise-system-diagram.png" alt="Diagram showing invoices, recipes, POS and sales, payroll, inventory, vendors, scheduling, accounting, reservations, and reviews flowing into Project MISE and producing four answers: what happened, why did it happen, what happens next, and what should we do" width="1450" height="725" loading="lazy">
+</section>
 
-    <section class="chef-visual" aria-label="Chef Cory culinary perspective"><div class="chef-visual-grid"><img class="chef-photo" src="assets/images/chef-cory-tomahawk.jpg" alt="Seasoned tomahawk steaks prepared on a cutting board" loading="lazy"><div class="chef-visual-copy"><span class="eyebrow" style="color:#e9af8b">Chef-informed by design</span><h2>Built with the restaurant floor in view.</h2><p>Project MISE connects the business questions operators face with the culinary and purchasing reality behind each service, plate, and invoice.</p></div></div></section>
+<!-- 4 · Six profitability pillars -->
+<section id="solutions" class="pillars-section">
+  <p class="eyebrow">Complete operating visibility</p>
+  <h2>Everything that drives profitability.<br><em>All in one place.</em></h2>
+  <div class="pillars">
+    <article><h3>Food Cost</h3><p>Know what each recipe and plate costs today—not six months ago.</p></article>
+    <article><h3>Menu Profitability</h3><p>See which items drive contribution and which add complexity without enough return.</p></article>
+    <article><h3>Purchasing</h3><p>Track price movement, vendor exposure, credits, substitutions, and buying patterns.</p></article>
+    <article><h3>Labor &amp; Operations</h3><p>Connect staffing, prep, dayparts, sales, and productivity to find real opportunities.</p></article>
+    <article><h3>Waste &amp; Inventory</h3><p>Understand theoretical usage, actual movement, stockouts, spoilage, and overproduction.</p></article>
+    <article><h3>Controls &amp; OVERWATCH</h3><p>Surface unusual refunds, voids, discounts, invoices, cash movement, and exceptions.</p></article>
+  </div>
+</section>
 
-    <section class="section">
-      <div class="container"><div class="section-head"><span class="eyebrow">The intelligence layer</span><h2 class="display">See the work behind a better operating decision.</h2><p>Project MISE is not a replacement for your chef, accountant, or advisor. It is a restaurant-focused layer that helps the right people see more clearly and act with stronger context.</p></div>
-      <div class="feature-split"><article class="feature-main"><span class="eyebrow" style="color:#e9af8b">From records to recommendation</span><h3>Build a usable operating picture—not another pile of reports.</h3><p>Project MISE organizes restaurant inputs around the decisions operators make every week: what to price, what to buy, what to watch, and where margin is moving.</p><div class="feature-list"><div><b>Food &amp; plate cost</b> · Connect recipe assumptions, purchase data, and menu choices.</div><div><b>Menu profitability</b> · Understand contribution and performance at the item level.</div><div><b>Purchasing visibility</b> · Give invoices, vendor behavior, and price changes operational context.</div></div></article><div class="feature-side"><article class="feature-card"><strong>Controller-style clarity</strong><h3>Turn operating records into a more structured financial conversation.</h3><p>Prepare better questions, clearer reviews, and more useful material for the professionals you rely on.</p></article><article class="feature-card"><strong>Chef-informed context</strong><h3>Respect how restaurants actually work.</h3><p>Designed around kitchen realities, product movement, menu intent, purchasing pressure, and service.</p></article></div></div></div>
-    </section>
+<!-- 5 · Restaurant operating team -->
+<section id="team" class="team-section">
+  <p class="eyebrow">Your restaurant operating team</p>
+  <h2>Specialized intelligence.<br><em>One shared operating picture.</em></h2>
+  <div class="team-grid">
+    <article><h3>Restaurant Controller</h3><p>Owns your financial picture. Food cost, prime cost, variance, cash flow, and owner reporting.</p></article>
+    <article><h3>Executive Chef</h3><p>Protects quality and consistency. Recipes, yields, portions, prep, substitutions, and product standards.</p></article>
+    <article><h3>Menu &amp; Product Manager</h3><p>Optimizes the menu mix. Menu engineering, pricing, contribution, complexity, and lifecycle.</p></article>
+    <article><h3>Purchasing Manager</h3><p>Finds better pricing and better terms. Vendors, bids, pack sizes, credits, ordering, and price changes.</p></article>
+    <article><h3>Labor &amp; Operations Manager</h3><p>Aligns labor with demand. Staffing, productivity, prep labor, dayparts, and throughput.</p></article>
+    <article><h3>Restaurant OVERWATCH</h3><p>Protects the business. Voids, comps, refunds, cash controls, shrink, and unusual activity.</p></article>
+  </div>
+  <p class="team-note">One team. One source of truth. Clear decisions. Behind these roles is a coordinated system of specialized software agents working from your restaurant’s own data.</p>
+</section>
 
-    <section class="fab section">
-      <div class="container"><div class="section-head"><span class="eyebrow">Features, advantages, benefits</span><h2 class="display">A sharper view of the restaurant, from the line to the ledger.</h2></div><div class="fab-grid"><article class="fab-card"><span>01 / COSTS</span><h3>Food-cost intelligence</h3><p>Bring ingredient, recipe, and purchasing context together to make food-cost movement easier to investigate.</p><b>Benefit · See what is changing before it becomes routine.</b></article><article class="fab-card"><span>02 / MENU</span><h3>Menu profitability</h3><p>Review margin, contribution, pricing assumptions, and menu choices through an operator-focused lens.</p><b>Benefit · Make menu decisions with more confidence.</b></article><article class="fab-card"><span>03 / PURCHASING</span><h3>Vendor &amp; invoice visibility</h3><p>Organize invoice detail, vendor activity, and price movement into a more useful purchasing record.</p><b>Benefit · Know what deserves a vendor conversation.</b></article><article class="fab-card"><span>04 / OPERATIONS</span><h3>Executive summaries</h3><p>Turn raw operating signals into focused reviews, risks, questions, and practical next steps.</p><b>Benefit · Spend less time sorting and more time deciding.</b></article></div></div>
-    </section>
+<!-- 6 · Five-step how it works -->
+<section id="how" class="how-section">
+  <p class="eyebrow">How Project MISE works</p>
+  <h2>From shoebox to operating brief<br><em>in five steps.</em></h2>
+  <div class="steps">
+    <article><b>01</b><h3>Send what you already have</h3><p>Invoices, menus, recipes, POS, payroll, inventory—upload or connect it. We accept it all.</p></article>
+    <article><b>02</b><h3>We build the operating model</h3><p>Your data is organized, normalized, and connected into a restaurant-specific model.</p></article>
+    <article><b>03</b><h3>The system finds movement</h3><p>Changes, trends, exceptions, risks, and margin opportunities become visible.</p></article>
+    <article><b>04</b><h3>Your operating team prepares the brief</h3><p>Specialized intelligence connects the dots and prepares clear recommendations.</p></article>
+    <article><b>05</b><h3>You decide what happens next</h3><p>Review, approve, assign, and act with context and confidence.</p></article>
+  </div>
+</section>
 
-    <section class="usecases section" id="use-cases">
-      <div class="container"><div class="section-head"><span class="eyebrow" style="color:#e9af8b">Where it helps</span><h2 class="display">Built around the moments operators cannot afford to miss.</h2><p>Project MISE supports routine management and deeper investigation when costs, margins, vendors, or operational decisions need a closer look.</p></div><div class="usecase-grid"><article class="usecase"><span>MENU</span><h3>Menu engineering reviews</h3><p>Review pricing, ingredient cost, item contribution, and menu assumptions before the next revision.</p></article><article class="usecase"><span>PURCHASING</span><h3>Vendor price monitoring</h3><p>Surface price changes, substitutions, recurring movements, and purchasing pressure worth reviewing.</p></article><article class="usecase"><span>FINANCE</span><h3>Weekly operator briefings</h3><p>Translate scattered records into a management-level view of what is known and what needs action.</p></article><article class="usecase"><span>KITCHEN</span><h3>Recipe &amp; plate-cost discipline</h3><p>Keep intended portions, recipe costs, and the reality of purchasing connected in one review.</p></article><article class="usecase"><span>CONTROL</span><h3>Invoice &amp; exception review</h3><p>Make it easier to inspect invoices, identify unusual movements, and preserve questions for follow-up.</p></article><article class="usecase"><span>LEADERSHIP</span><h3>Owner and advisor preparation</h3><p>Create a more useful record for leadership reviews and conversations with qualified professionals.</p></article></div></div>
-    </section>
+<!-- 7 · Sample daily operating brief -->
+<section class="daily-brief">
+  <div class="daily-brief-copy">
+    <p class="eyebrow">Your daily operating briefing</p>
+    <h2>Good morning, Chef.<br><em>Here is what needs your attention.</em></h2>
+    <div class="brief-panel" role="img" aria-label="Sample daily operating brief listing five findings">
+      <ul>
+        <li>Food cost increased 1.6 points</li>
+        <li>Vendor price increases on 3 items</li>
+        <li>2 menu items below contribution target</li>
+        <li>Prep overproduction on Friday by 14%</li>
+        <li>1 refund pattern requires review</li>
+      </ul>
+      <div class="opportunity"><span>Estimated monthly opportunity</span><strong>$6,840</strong></div>
+      <p class="fineprint">Illustrative data. Actual results vary by restaurant.</p>
+    </div>
+  </div>
+  <figure class="daily-brief-photo">
+    <img src="assets/images/kitchen-prep-intelligence.jpg" alt="A chef plating a finished dish with precision in a professional kitchen" width="1600" height="1067" loading="lazy">
+  </figure>
+</section>
 
-    <section class="workflow section" id="workflow"><div class="container"><div class="section-head"><span class="eyebrow">A practical workflow</span><h2 class="display">From kitchen records to a clearer next move.</h2><p>Project MISE is being designed as a repeatable operating path—not an abstract dashboard.</p></div><div class="steps"><article class="step"><span class="step-number">01</span><h3>Bring in the records</h3><p>Invoices, recipes, menus, POS exports, purchasing records, and operating reports.</p></article><article class="step"><span class="step-number">02</span><h3>Organize the inputs</h3><p>Structure ingredients, vendors, menu items, costs, and operational context.</p></article><article class="step"><span class="step-number">03</span><h3>Review the movement</h3><p>Identify cost shifts, margin questions, purchasing patterns, and exceptions.</p></article><article class="step"><span class="step-number">04</span><h3>Build the brief</h3><p>Turn the operating picture into clear findings, questions, and priorities.</p></article><article class="step"><span class="step-number">05</span><h3>Act with context</h3><p>Use the review to guide menu, purchasing, operations, and advisor conversations.</p></article></div></div></section>
+<!-- 8 · Mission -->
+<section class="mission">
+  <div class="mission-copy">
+    <p class="eyebrow">Our mission</p>
+    <h2>We believe independent restaurants deserve<br><em>enterprise-grade intelligence.</em></h2>
+    <p>Restaurant owners should not have to choose between operating on instinct and hiring an executive team they cannot afford.</p>
+    <p>Project MISE exists to make restaurant financial and operating intelligence accessible to owners, chefs, managers, and families carrying the weight of the business every day.</p>
+    <p>We are not building technology for technology’s sake.</p>
+    <p><strong>We are building a practical system that helps restaurant owners protect what they built, keep more of what they earn, and make decisions with greater confidence.</strong></p>
+  </div>
+  <figure class="mission-photo">
+    <img src="assets/images/restaurant-team.jpg" alt="A restaurant team working together during service" width="1600" height="1067" loading="lazy">
+  </figure>
+</section>
 
-    <section class="mission section" id="mission"><div class="container mission-grid"><div><span class="eyebrow">Our mission</span><h2 class="display">Make restaurant intelligence more accessible to the people keeping restaurants alive.</h2><p>Independent operators carry responsibilities that larger groups spread across finance, culinary, procurement, and operations teams.</p><p>Project MISE is being built to close part of that gap: practical, chef-informed intelligence that helps owners understand the business they are already working so hard to build.</p></div><blockquote class="mission-quote">The goal is not more data. The goal is a clearer operating position when the next decision matters.</blockquote></div></section>
+<!-- 9 · Twenty-year founding story -->
+<section id="story" class="story">
+  <p class="eyebrow">Twenty years in the making</p>
+  <h2>The completion of<br><em>an unfinished mission.</em></h2>
+  <div class="story-cols">
+    <p>Two decades ago, MisEnSoft connected recipe costing with supplier data before the technology was ready to make the process simple. The vision was right. The tools were not.</p>
+    <p>Today, modern data systems and intelligent automation make the original vision possible at a much larger scale. Project MISE is not the revival of an old software product. <strong>It is the completion of an unfinished mission</strong>—a practical operating intelligence system built for independent restaurants.</p>
+  </div>
+</section>
 
-    <figure class="brand-banner"><img src="assets/images/chef-cory-banner.jpg" alt="Chef Cory mark framed by plated desserts and sliced steak" loading="eager"></figure>
+<!-- 10 · Founding restaurant program CTA -->
+<section id="founding" class="founding">
+  <div class="founding-intro">
+    <p class="eyebrow">Founding restaurant program</p>
+    <h2>Help shape the future of<br><em>restaurant intelligence.</em></h2>
+    <p>We are preparing a small design-partner program for operators who want direct input into the first commercial version of Project MISE. Founding restaurants receive founding pricing, direct input on product development, early access to new features, and priority onboarding and support.</p>
+  </div>
+  <form class="founding-form" id="founding-form" novalidate>
+    <div class="field">
+      <label for="ff-name">Your name <span class="req" aria-hidden="true">*</span></label>
+      <input id="ff-name" name="name" type="text" autocomplete="name" required maxlength="120">
+    </div>
+    <div class="field">
+      <label for="ff-restaurant">Restaurant name <span class="req" aria-hidden="true">*</span></label>
+      <input id="ff-restaurant" name="restaurant" type="text" autocomplete="organization" required maxlength="120">
+    </div>
+    <div class="field">
+      <label for="ff-email">Email <span class="req" aria-hidden="true">*</span></label>
+      <input id="ff-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254">
+    </div>
+    <div class="field">
+      <label for="ff-message">What is your biggest margin challenge? <span class="opt">(optional)</span></label>
+      <textarea id="ff-message" name="message" rows="4" maxlength="2000"></textarea>
+    </div>
+    <div class="field hp-field" aria-hidden="true">
+      <label for="ff-website">Leave this field empty</label>
+      <input id="ff-website" name="website" type="text" tabindex="-1" autocomplete="off">
+    </div>
+    <p class="form-error" id="ff-error" role="alert" hidden></p>
+    <button class="btn btn-light" type="submit" data-analytics="cta_founding_submit">Express interest</button>
+    <p class="form-note">Submitting opens a pre-filled email in your mail app—review it and send it to complete your request. This static website stores no form data.</p>
+  </form>
+</section>
 
-    <section class="access section" id="early-access"><div class="container access-grid"><div><span class="eyebrow" style="color:#e9af8b">Early access</span><h2 class="display">The restaurant already has the story. It is time to see it more clearly.</h2><p>Project MISE is in its early platform phase. Join the interest list to follow its development for independent restaurant operators.</p></div><form class="access-form" id="access-form"><h3>Request Project MISE early access</h3><div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="email">Business email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="restaurant">Restaurant or group</label><input id="restaurant" name="restaurant" autocomplete="organization"></div><button class="button primary" type="submit">Request early access <span>↗</span></button><p class="form-note">Version 1 does not collect or transmit this form. Contact workflow is coming soon.</p><div class="form-status" id="form-status" role="status">Thank you for your interest. This Version 1 form is not connected to a submission system yet.</div></form></div></section>
-  </main>
-  <footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="#top" aria-label="Project MISE home"><img class="brand-logo" src="assets/images/chef-cory-logo.png" alt="Chef Cory logo"><span>PROJECT MISE<small>Restaurant operating intelligence</small></span></a><p>Enterprise-grade restaurant intelligence for the independent operator.</p></div><div><h4>Explore</h4><ul><li><a href="#intelligence">Intelligence</a></li><li><a href="#use-cases">Use cases</a></li><li><a href="#workflow">How it works</a></li></ul></div><div><h4>Connect</h4><ul><li><a href="#mission">Mission</a></li><li><a href="#early-access">Early access</a></li><li>Contact workflow coming soon</li></ul></div></div><div class="disclaimer">Project MISE provides restaurant operating intelligence, information organization, analytical support, and decision-support tools. It does not provide legal, tax, accounting, investment, or other licensed professional advice.<span class="version">Version 1 · Concept landing page</span></div></div></footer>
-  <script>
-    const menu=document.querySelector('#menu');
-    const nav=document.querySelector('#site-nav');
-    menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
-    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')}));
-    document.querySelector('#access-form').addEventListener('submit',event=>{event.preventDefault();if(!event.currentTarget.reportValidity())return;document.querySelector('#form-status').classList.add('show')});
-  </script>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">
+    <span class="brand-project">PROJECT</span> <strong>MISE</strong>
+    <span class="footer-tag">Operating intelligence for restaurants</span>
+  </div>
+  <p class="footer-legal">© 2026 Project MISE by Kinetic Labs. Built for independent restaurants.</p>
+  <p class="footer-disclaimer">Project MISE provides operating and decision-support information. It does not replace licensed accountants, attorneys, tax professionals, or other regulated professionals. Sample figures shown on this page are illustrative and are not a promise of savings or results.</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Lightweight analytics events (dataLayer-compatible) ---- */
+  window.dataLayer = window.dataLayer || [];
+  function track(eventName) {
+    window.dataLayer.push({ event: eventName, ts: Date.now() });
+  }
+  document.querySelectorAll('[data-analytics]').forEach(function (el) {
+    el.addEventListener('click', function () { track(el.getAttribute('data-analytics')); });
+  });
+
+  /* ---- Mobile navigation ---- */
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', function () {
+    var open = document.body.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* ---- Founding program form: validation + honeypot + mailto ---- */
+  var form = document.getElementById('founding-form');
+  var errorBox = document.getElementById('ff-error');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errorBox.hidden = true;
+    errorBox.textContent = '';
+
+    /* Spam honeypot: silently drop bot submissions */
+    if (form.elements.website.value !== '') { return; }
+
+    var name = form.elements.name.value.trim();
+    var restaurant = form.elements.restaurant.value.trim();
+    var email = form.elements.email.value.trim();
+    var message = form.elements.message.value.trim();
+
+    var problems = [];
+    if (!name) { problems.push('your name'); }
+    if (!restaurant) { problems.push('your restaurant name'); }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { problems.push('a valid email address'); }
+    if (problems.length) {
+      errorBox.textContent = 'Please provide ' + problems.join(', ') + '.';
+      errorBox.hidden = false;
+      return;
+    }
+
+    track('founding_form_valid_submit');
+    var subject = 'Project MISE Founding Restaurant Program — ' + restaurant;
+    var bodyLines = [
+      'Name: ' + name,
+      'Restaurant: ' + restaurant,
+      'Email: ' + email
+    ];
+    if (message) { bodyLines.push('', 'Biggest margin challenge:', message); }
+    var href = 'mailto:cory@mcsatech.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+    window.location.href = href;
+  });
+})();
+</script>
 </body>
 </html>
