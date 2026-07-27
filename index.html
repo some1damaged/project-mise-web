@@ -108,6 +108,7 @@
 
   <section class="how" id="how">
     <p class="eyebrow">How It Works</p>
+    <h2 class="sr-only">How Project MISE works</h2>
     <div class="steps">
       <article><b aria-hidden="true">⇧</b><span class="step-number">1</span><h3>Send What You<br>Already Have</h3><p>Invoices, menus, recipes, POS, payroll, inventory—we accept it all.</p></article>
       <article><b aria-hidden="true">⌁</b><span class="step-number">2</span><h3>Project MISE Builds the<br>Operating Model</h3><p>We organize, clean, and connect your data.</p></article>
@@ -196,7 +197,11 @@
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   });
-  nav.addEventListener('click', function () { document.body.classList.remove('nav-open'); toggle.setAttribute('aria-expanded', 'false'); });
+  nav.addEventListener('click', function () {
+    document.body.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+  });
 
   var dialog = document.getElementById('interest-dialog');
   var form = document.getElementById('founding-form');
@@ -225,7 +230,7 @@
       error.hidden = false;
       return;
     }
-    track('founding_form_valid_submit');
+    track(formKind === 'demo' ? 'demo_form_valid_submit' : 'founding_form_valid_submit');
     var lines = ['Name: ' + name, 'Restaurant: ' + restaurant, 'Email: ' + email];
     if (form.elements.phone.value.trim()) { lines.push('Phone: ' + form.elements.phone.value.trim()); }
     if (form.elements.message.value.trim()) { lines.push('', 'Biggest margin challenge:', form.elements.message.value.trim()); }
