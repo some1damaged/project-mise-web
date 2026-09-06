@@ -63,3 +63,15 @@ Generation prompt:
 - Honeypot and no-JavaScript fallback reviewed in source.
 
 Production publication requires explicit approval. The Azure workflow is unchanged.
+
+
+### MisEnSoft chef coat
+
+`assets/images/mise-chef-coat.webp` is a 1122 x 1402 artistic restoration of Cory's
+original `coat.gif`, created with built-in imagegen. The source GIF is untouched.
+It appears in the founder story with attribution to the original MisEnSoft site,
+meaningful alt text, lazy loading, and responsive cropping.
+
+Prompt: Edit the supplied archival chef coat graphic into a polished high-resolution editorial image for Project MISE's founder-story section. Preserve its recognizable white chef jacket, dark charcoal collar lining, single visible row of dark buttons, and dark horizontal breast-pocket trim. Reconstruct clean natural fabric texture, seams and folds instead of pixelated GIF dithering. Show only the cropped jacket torso, no face, no hands, no invented person or logo. Keep the left-edge cropped composition and visible right sleeve, similar to the original. Replace stark white background with a subtle warm porcelain #F5F1E8 studio background, soft directional window light and gentle realistic shadows. Premium restrained culinary heritage feel, white fabric distinguished clearly from the background, charcoal details, no text, no watermark, no props. Portrait 4:5 framing, high resolution. This is an artistic restoration of the actual provided image, not an unrelated chef scene.
+
+Validation: inspected desktop and 390px mobile placement; image loaded and no horizontal overflow. `git diff --check` passed. No JavaScript or infrastructure changes.
